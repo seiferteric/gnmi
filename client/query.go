@@ -172,6 +172,8 @@ type Query struct {
 	// SubReq is an optional field. If not nil, gnmi client implementation uses
 	// it rather than generating from client.Query while sending gnmi Subscribe RPC.
 	SubReq *gpb.SubscribeRequest
+	Streaming_type gpb.SubscriptionMode
+	Streaming_sample_int uint64
 }
 
 // Destination extracts a Destination instance out of Query fields.
