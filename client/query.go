@@ -174,6 +174,7 @@ type Query struct {
 	SubReq *gpb.SubscribeRequest
 	Streaming_type gpb.SubscriptionMode
 	Streaming_sample_int uint64
+	Heartbeat_int uint64
 }
 
 // Destination extracts a Destination instance out of Query fields.
