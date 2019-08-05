@@ -175,6 +175,7 @@ type Query struct {
 	Streaming_type gpb.SubscriptionMode
 	Streaming_sample_int uint64
 	Heartbeat_int uint64
+	Suppress_redundant bool
 }
 
 // Destination extracts a Destination instance out of Query fields.
